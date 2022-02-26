@@ -48,6 +48,10 @@ html {
   background-color: var(--dracula-black);
 }
 
+.headline {
+  cursor: pointer;
+}
+
 h2 {
   margin-top: 0;
   font-family: "Indie Flower", cursive;
