@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;user-scalable=0;" /> -->
+  <title>Friends</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins&display=swap');
+  </style>
+  <link rel="icon" href="icon512.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- start here  -->
+  <div class="col main-group">
+
+    <h1 class="headline">My Friends</h1>
+
+    <h2 id="friend-name" class="headline">Sally</h2>
+
+    <img id="pic-1" class="pic pic-on"
+      src="https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.18169-9/12919763_1340629295953062_210686253322294312_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=a4a2d7&_nc_ohc=t5ot_MoRffYAX_9mddl&tn=UMajKFnH8LTfXpb5&_nc_ht=scontent.ftpe10-1.fna&oh=00_AT8oLVH61Fyfh_P8M-Mru3Nan6Kme-pAbBeg0W4L7w6uvw&oe=623B0AC6"
+      alt="Sally" srcset="">
+    <img id="pic-2" class="pic"
+      src="https://scontent.ftpe10-1.fna.fbcdn.net/v/t39.30808-6/273666769_10227362547554409_3110609727182422053_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=IbDOrB-Kb_0AX8FBikH&_nc_ht=scontent.ftpe10-1.fna&oh=00_AT-tY38oCpAvILIKwGlGsY9I-bXuDSvx4crdF83r7JCpuA&oe=621C3450"
+      alt="Mary" srcset="">
+    <img id="pic-3" class="pic"
+      src="https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/72155950_2869168553147370_2035911517320249344_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iPq6WTN7hTAAX9xPEGG&_nc_ht=scontent.ftpe10-1.fna&oh=00_AT_VgHdAIC9rip5ZyfOak63Ns-G_alrrnyX9lmM35RE5qw&oe=623BFE53"
+      alt="Jennifer" srcset="">
+
+    <div class="row btn-group">
+      <button id="left" class="btn" onclick="shift(-1)"><i class="fas fa-angle-left"></i></button>
+      <button class="btn-label">Picture</button>
+      <button id="right" class="btn" onclick="shift(1)"><i class="fas fa-angle-right"></i></button>
+    </div>
+    <div class="row btn-group">
+      <button id="left" class="btn" onclick="filter(-1)"><i class="fas fa-angle-left"></i></button>
+      <div class="filter-group">
+        <input id="slider" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <button id="filter" class="filter btn-label pic-on">No Filter</button>
+      </div>
+      <button id="right" class="btn" onclick="filter(1)"><i class="fas fa-angle-right"></i></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
