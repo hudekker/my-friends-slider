@@ -89,6 +89,7 @@ h2 {
   width: 275px;
   height: 275px;
   filter: var(--filter);
+  cursor: pointer;
 }
 
 .pic-on {
