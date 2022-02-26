@@ -13,8 +13,19 @@
   --pic-color: var(--dracula-yellow);
 
   --filter: "";
-  --filter-blur: blur(4px);
-  --filter-brightness: brightness(0.3);
+  --filter-value: 1px;
+  --filter-blur: blur(var(--filter-value));
+  --filter-brightness: brightness(var(--filter-value));
+  --filter-contrast: contrast(var(--filter-value));
+  --filter-grayscale: grayscale(var(--filter-value));
+  --filter-huerotate: hue-rotate(var(--filter-value));
+  --filter-invert: invert(var(--filter-value));
+  --filter-opacity: opacity(var(--filter-value));
+  --filter-saturate: saturate(var(--filter-value));
+  --filter-sepia: sepia(var(--filter-value));
+
+  /* --filter-blur: blur(1px);
+  --filter-brightness: brightness(0.7);
   --filter-contrast: contrast(180%);
   --filter-grayscale: grayscale(100%);
   --filter-huerotate: hue-rotate(180deg);
@@ -22,8 +33,9 @@
   --filter-opacity: opacity(50%);
   --filter-saturate: saturate(7);
   --filter-sepia: sepia(100%);
-  --filter-shadow: drop-shadow(8px 8px 10px green);
+  --filter-shadow: drop-shadow(8px 8px 10px green); */
 
+  /* --filter-value: 1px; */
   --filter-display: block;
 }
 
@@ -172,11 +184,11 @@ h2 {
   height: 25px;
   margin: 10px;
   border-radius: 25px;
-  background: #d3d3d3;
+  background: var(--dracula-dark-black);
   outline: none;
-  opacity: 0.7;
-  -webkit-transition: 0.2s;
-  transition: opacity 0.2s;
+  /* opacity: 0.7; */
+  -webkit-transition: 2s;
+  transition: display 2s;
 }
 
 /* slider thumb*/
