@@ -119,6 +119,6 @@ document.querySelector(".filter-group").addEventListener("mouseleave", (event) =
   document.getElementById("filter").classList.add("pic-on");
 });
 
-document.querySelector("#headline").addEventListener("input", (event) => {
-  console.log("clicked on headline");
-});
+// document.querySelector("#headline").addEventListener("input", (event) => {
+//   console.log("clicked on headline");
+// });
